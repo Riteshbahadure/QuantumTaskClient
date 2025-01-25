@@ -51,7 +51,7 @@ const UserRegister = () => {
     }, [error]);
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gradient-to-b from-teal-400 to-blue-500">
+        <div className="flex max-sm:px-8 items-center justify-center h-screen bg-gradient-to-b from-teal-400 to-blue-500">
             <div className="w-full max-w-sm p-6 bg-gray-800 rounded-lg shadow-xl relative">
                 <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-teal-400 text-white text-center px-4 py-1 rounded-t-xl font-bold">
                     Register

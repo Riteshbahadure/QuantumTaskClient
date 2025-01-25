@@ -59,43 +59,57 @@ const Home = () => {
 
             {/* User Table */}
             <div className="flex flex-col items-center mt-6">
-                <div className="overflow-x-auto w-full sm:w-11/12 lg:w-10/12">
-                    <div className="py-4 max-sm:px-10">
+                <div className="w-full sm:w-11/12 lg:w-10/12">
+                    <div className="py-4 max-sm:px-2">
                         <div className="overflow-hidden border border-gray-200 rounded-lg shadow-lg">
-                            <table className="min-w-full bg-white">
-                                <thead className="bg-gray-100 border-b">
-                                    <tr>
-                                        <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">#</th>
-                                        <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Name</th>
-                                        <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Email</th>
-                                        <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Date of Birth</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {data &&
-                                        data.map((item, i) => (
-                                            <tr key={i} className="border-b last:border-0 hover:bg-gray-50">
-                                                <td className="px-6 py-4 text-sm font-medium text-gray-900">
-                                                    {i + 1}
-                                                </td>
-                                                <td className="flex items-center px-6 py-4 text-sm text-gray-900">
-                                                   
-                                                        <MdAccountCircle className="w-10 h-10 text-gray-500 mr-3" />
-                                                   
-                                                    {item.name}
-                                                </td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">{item.email}</td>
-                                                <td className="px-6 py-4 text-sm text-gray-500">
-                                                    {item.dateOfBirth.split("T")[0]}
-                                                </td>
-                                            </tr>
-                                        ))}
-                                </tbody>
-                            </table>
+                            <div className="overflow-x-auto">
+                                <table className="min-w-full bg-white">
+                                    <thead className="bg-gray-100 border-b">
+                                        <tr>
+                                            <th className="text-xs md:text-sm font-medium text-gray-900 px-4 md:px-6 py-2 md:py-4 text-left">
+                                                #
+                                            </th>
+                                            <th className="text-xs md:text-sm font-medium text-gray-900 px-4 md:px-6 py-2 md:py-4 text-left">
+                                                Name
+                                            </th>
+                                            <th className="text-xs md:text-sm font-medium text-gray-900 px-4 md:px-6 py-2 md:py-4 text-left">
+                                                Email
+                                            </th>
+                                            <th className="text-xs md:text-sm font-medium text-gray-900 px-4 md:px-6 py-2 md:py-4 text-left">
+                                                Date of Birth
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {data &&
+                                            data.map((item, i) => (
+                                                <tr
+                                                    key={i}
+                                                    className="border-b last:border-0 hover:bg-gray-50"
+                                                >
+                                                    <td className="px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm font-medium text-gray-900">
+                                                        {i + 1}
+                                                    </td>
+                                                    <td className="flex items-center px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm text-gray-900">
+                                                        <MdAccountCircle className="w-8 h-8 md:w-10 md:h-10 text-gray-500 mr-2 md:mr-3" />
+                                                        {item.name}
+                                                    </td>
+                                                    <td className="px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm text-gray-500">
+                                                        {item.email}
+                                                    </td>
+                                                    <td className="px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm text-gray-500">
+                                                        {item.dateOfBirth.split("T")[0]}
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 };

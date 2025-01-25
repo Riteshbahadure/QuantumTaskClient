@@ -47,8 +47,8 @@ const UserLogin = () => {
     }, [error]);
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gradient-to-b from-teal-500 to-blue-700">
-            <div className="w-full max-w-md bg-gradient-to-b from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-6 shadow-2xl relative">
+        <div className="flex max-sm:px-8  items-center justify-center h-screen bg-gradient-to-b from-teal-500 to-blue-700">
+            <div className="w-full   max-w-md bg-gradient-to-b from-gray-800 to-gray-900 bg-opacity-90 rounded-xl p-6 shadow-2xl relative">
                 {/* Sign In Header */}
                 <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-teal-400 text-white text-center px-4 py-1 rounded-t-xl font-bold">
                     SIGN IN
