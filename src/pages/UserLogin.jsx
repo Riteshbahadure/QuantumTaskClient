@@ -115,7 +115,7 @@ const UserLogin = () => {
                 <div className="mt-6 text-center">
                     <p className="text-gray-400">
                         Don't have an account?{" "}
-                        <button  onClick={()=>navigate("/login")} className="text-teal-400 hover:underline">
+                        <button  onClick={()=>navigate("/")} className="text-teal-400 hover:underline">
                             Sign Up
                         </button>
                     </p>
