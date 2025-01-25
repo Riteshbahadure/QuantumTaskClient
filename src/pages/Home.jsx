@@ -69,7 +69,6 @@ const Home = () => {
                                         <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Name</th>
                                         <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Email</th>
                                         <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Date of Birth</th>
-                                        <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">Date of Birth</th>
                                     </tr>
                                 </thead>
                                 <tbody>
